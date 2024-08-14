@@ -7,8 +7,10 @@ redirect_from:
   - /about.html
 ---
 
-I am an assistant professor with the Department of Electrical and Computer Engineering at the Idaho State University. I received my Ph.D. degree from the University of Florida in 2022 and B.S. degree from the University of Science and Technology of China in 2015.
+I am an assistant professor at the Electrical and Computer Engineering department, Michigan Technology University. My research interests lie in deep learning-related cybersecurity, hardware security, and network security.
 
-My research interest focuses on the security and privacy of cyber-physical systems, including smart grid and connected vehicles. The applied methodologies include optimization, control, statistics and machine learning, system implementation, etc.
+I received my Ph.D. in Electrical Engineering from the University of Florida in 2022, under the supervision of Professor Shuo Wang, Professor Yier Jin, and Professor Yuguang Fang. I received my M.S. (2016) and B.S. (2013) in Information Science from University of Science and Technology of China (USTC) advised by Dr. Chi Zhang. 
 
-I am looking for self-motivated Master or PhD students who are interested in security and privacy of cyber-physical systems. Full financial support in the form of research assistantship (RA) or teaching assistantship (TA) will be offered for qualified students. If interested, please send me your CV, transcript(s), and sample publications if any. Please refer to this link for the GRE/TOEFL requirements and other application-related information.
+I am looking for Ph.D. students who are interested in cybersecurity topics, including but not limited to deep learning security, IoT security, and hardware security. Full financial support in research assistantship (RA) or teaching assistantship (TA) will be offered for qualified students. If interested, please send your CV, transcript(s), and sample publications to Dr. Kaichen Yang at kaicheny@mtu.edu. Please refer to this link for the GRE/TOEFL requirements and other application-related information.
+
+For students at Michigan Tech, multiple paid part-time and volunteer research assistant positions are available. If you are interested, please send me your CV and transcripts (unofficial copies are acceptable).
