@@ -17,7 +17,8 @@ For students at Michigan Tech, multiple paid part-time and volunteer research as
 
 
 #  News
-- [Grant][2024.07]: Thanks NSF for the NSF OAC CICI Grant (Co-PI) to fund our project on Safeguarding AI in Bioinformatics!$${\color{red}Red}$$
+- [Grant]$${\color{red}[2024.07]}$$: Thanks NSF for the NSF OAC CICI Grant (Co-PI) to fund our project on Safeguarding AI in Bioinformatics!
+- #$${\color{red}Red}$$
 - [Paper][2023.11]: Our paper "Hardware phi-1.5 b: A large language model encodes hardware domain specific knowledge" has been accepted by IEEE/ACM ASP-DAC 2024.
 - [Panel][2024.01]: I am happy to serve as the NSF panelist and complete a two-day panel discussion!
 - [Talk][2023.12]: I attended and presented our paper "Llm4sechw: Leveraging domain-specific large language model for hardware debugging" at IEEE AsianHOST 2023, Tainjin, China.
