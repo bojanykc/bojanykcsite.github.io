@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am an assistant professor at the Electrical and Computer Engineering department, Michigan Technology University. My research interests lie in deep learning-related cybersecurity, hardware security, and network security.
+I am an assistant professor at the [Electrical and Computer Engineering department](https://www.mtu.edu/ece/), [Michigan Technology University](https://www.mtu.edu/). My research interests lie in deep learning-related cybersecurity, hardware security, and network security.
 
 I received my Ph.D. in Electrical Engineering from the University of Florida in 2022, under the supervision of Professor Shuo Wang, Professor Yier Jin, and Professor Yuguang Fang. I received my M.S. (2016) and B.S. (2013) in Information Science from University of Science and Technology of China (USTC) advised by Dr. Chi Zhang. 
 
