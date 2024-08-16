@@ -246,6 +246,15 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _group
+    - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
   # _teaching
   - scope:
       path: ""
