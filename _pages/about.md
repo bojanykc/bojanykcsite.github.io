@@ -17,7 +17,7 @@ For students at Michigan Tech, multiple paid part-time and volunteer research as
 
 
 #  News
-- [[award]][2024.07]] ,
+- [award][2024.07]: Thanks NSF for the NSF OAC Grant (Co-PI) to fund our project on Safeguarding AI in Bioinformatics!
 - *2012.09 - 2016.06*,
  
 
