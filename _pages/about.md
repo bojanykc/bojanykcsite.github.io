@@ -14,3 +14,10 @@ I received my Ph.D. in Electrical Engineering from the University of Florida in 
 I am looking for Ph.D. students who are interested in cybersecurity topics, including but not limited to deep learning security, IoT security, and hardware security. Full financial support in research assistantship (RA) or teaching assistantship (TA) will be offered for qualified students. If interested, please send your CV, transcript(s), and sample publications to Dr. Kaichen Yang at [kaicheny@mtu.edu](kaicheny@mtu.edu). Please refer to [this link](https://www.mtu.edu/ece/graduate/computer/) for the GRE/TOEFL requirements and other application-related information.
 
 For students at Michigan Tech, multiple paid part-time and volunteer research assistant positions are available. If you are interested, please send me your CV and transcripts (unofficial copies are acceptable).
+
+
+# 🎓 News
+- *2016.06 - 2022.12*,
+- *2012.09 - 2016.06*,
+ 
+
