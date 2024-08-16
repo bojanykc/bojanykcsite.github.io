@@ -17,11 +17,11 @@ For students at Michigan Tech, multiple paid part-time and volunteer research as
 
 
 #  News
-- [Grant]$${\color{red}[2024.07]}$$: Thanks NSF for the NSF OAC CICI Grant (Co-PI) to fund our project on Safeguarding AI in Bioinformatics!
-- [Paper][2023.11]: Our paper "Hardware phi-1.5 b: A large language model encodes hardware domain specific knowledge" has been accepted by IEEE/ACM ASP-DAC 2024.
-- [Panel][2024.01]: I am happy to serve as the NSF panelist and complete a two-day panel discussion!
-- [Talk][2023.12]: I attended and presented our paper "Llm4sechw: Leveraging domain-specific large language model for hardware debugging" at IEEE AsianHOST 2023, Tainjin, China.
-- [Award][2024.04]: I received NSF ERI (pre-career) Award. Thanks, NSF!
-- [Service][2022.08]: I have successfully defended my Ph.D. dissertation, and I will join the ECE Department at the Michigan Technological University as a tenure-track assistant professor!
+- $${\color{red}[2024.07]}$$[Grant]: Thanks NSF for the NSF OAC CICI Grant (Co-PI) to fund our project on Safeguarding AI in Bioinformatics!
+- $${\color{red}[2023.11]}$$[Paper]: Our paper "Hardware phi-1.5 b: A large language model encodes hardware domain specific knowledge" has been accepted by IEEE/ACM ASP-DAC 2024.
+- $${\color{red}[2024.01]}$$[Panel]: I am happy to serve as the NSF panelist and complete a two-day panel discussion!
+- $${\color{red}[2023.12]}$$[Talk]: I attended and presented our paper "Llm4sechw: Leveraging domain-specific large language model for hardware debugging" at IEEE AsianHOST 2023, Tainjin, China.
+- $${\color{red}[2024.04]}$$[Award]: I received NSF ERI (pre-career) Award. Thanks, NSF!
+- $${\color{red}[2022.08]}$$[Service]: I have successfully defended my Ph.D. dissertation, and I will join the ECE Department at the Michigan Technological University as a tenure-track assistant professor!
  
 
