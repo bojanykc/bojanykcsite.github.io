@@ -15,12 +15,12 @@ main:
     url: /teaching/    
     
   - title: "Research"
-    url: /portfolio/
+    url: /pubilications/
         
-  - title: "Blog Posts"
+  - title: "Activity"
     url: /year-archive/
     
-  - title: "CV"
+  - title: "Award"
     url: /cv/
     
   - title: "Guide"
