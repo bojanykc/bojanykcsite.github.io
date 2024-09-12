@@ -7,38 +7,11 @@ author_profile: true
 
 
 <p>
-<img src="../images/CPS.png" hspace="5" vspace="5" align="left" height="240" width="320" /> <b>Overview:</b> While classical information is represented by bits that can have a value of either 0 or 1, quantum information is represented by qubits, which can exist in a superposition of 0 and 1 at the same time. Quantum communications and networking refers to the transmission of qubits between two or more parties using unique quantum phenomena like entanglement that are not available to classical networks. The recent development of quantum networks has quickly grown in scale and sparked a technological revolution in novel applications including quantum sensing and quantum computing.
+<img src="../images/CPS.png" hspace="10" vspace="10" align="left" height="240" width="320" /> <b>Overview:</b> While classical information is represented by bits that can have a value of either 0 or 1, quantum information is represented by qubits, which can exist in a superposition of 0 and 1 at the same time. Quantum communications and networking refers to the transmission of qubits between two or more parties using unique quantum phenomena like entanglement that are not available to classical networks. The recent development of quantum networks has quickly grown in scale and sparked a technological revolution in novel applications including quantum sensing and quantum computing.
 
 </p>
 
 
 
 
-
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
 
