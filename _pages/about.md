@@ -24,4 +24,4 @@ For students at Michigan Tech, multiple paid part-time and volunteer research as
 - $${\color{red}[2024.04]}$$[Award]: I received NSF ERI (pre-career) Award. Thanks, NSF!
 - $${\color{red}[2022.08]}$$[Service]: I have successfully defended my Ph.D. dissertation, and I will join the ECE Department at the Michigan Technological University as a tenure-track assistant professor!
   <br>
-  $${\color{green}[More News](https://www.mtu.edu/)}$$
+  \color{green}[More News](https://www.mtu.edu/)
