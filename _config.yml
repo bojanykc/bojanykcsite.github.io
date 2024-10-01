@@ -221,7 +221,7 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
-  researcj:
+  research:
     output: true
     permalink: /:collection/:path/
 
@@ -290,6 +290,7 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _news
 
 
 # Sass/SCSS
