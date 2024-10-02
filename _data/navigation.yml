@@ -20,8 +20,8 @@ main:
   - title: "Activity"
     url: /year-archive/
     
-  - title: "Award"
-    url: /cv/
+  #- title: "Award"
+   # url: /cv/
     
-  - title: "Guide"
-    url: /markdown/
+  #- title: "Guide"
+    #url: /markdown/
