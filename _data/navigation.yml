@@ -18,7 +18,8 @@ main:
     url: /research/
         
   - title: "Activity"
-    url: /year-archive/
+    url: /activity/
+    #url: /year-archive/
     
   #- title: "Award"
    # url: /cv/
