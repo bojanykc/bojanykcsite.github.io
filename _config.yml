@@ -29,7 +29,8 @@ author:
   bio              : >-
     Assistant Professor<br>
     <a href="https://www.mtu.edu/ece/" target="_blank" rel="noopener noreferrer">Department of Electrical and Computer Engineering</a><br>
-    <a href="https://www.mtu.edu/" target="_blank" rel="noopener noreferrer">Michigan Technological University</a>  location         : "EERC 712, Houghton, MI 49931"
+    <a href="https://www.mtu.edu/" target="_blank" rel="noopener noreferrer">Michigan Technological University</a>  
+  location         : "EERC 712, Houghton, MI 49931"
   employer         : "Michigan Technological University"
   uri              : # URL
   email : "kaicheny@mtu.edu" 
