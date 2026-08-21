@@ -7,13 +7,17 @@ redirect_from:
   - /about.html
 ---
 
-I am an assistant professor at the [Electrical and Computer Engineering department](https://www.mtu.edu/ece/), [Michigan Technological University](https://www.mtu.edu/). My research interests lie in deep learning-related cybersecurity, hardware security, and network security.
+I am an Assistant Professor in the [Department of Electrical and Computer Engineering](https://www.mtu.edu/ece/) at [Michigan Technological University](https://www.mtu.edu/). My research focuses on **secure and trustworthy intelligent systems** across AI models, computing hardware, sensing, networks, and cyber-physical platforms. My current research interests include trustworthy and secure AI, hardware and microarchitectural security, cyber-physical and robotic system security, and the security and robustness of 2D/3D sensing and perception systems.
 
-I received my Ph.D. in Electrical Engineering from the University of Florida in 2022, under the supervision of Professor Shuo Wang, Professor Yier Jin, and Professor Yuguang Fang. I received my M.S. (2016) and B.S. (2013) in Information Science from University of Science and Technology of China (USTC) advised by Dr. Chi Zhang. You can find my CV here: [Kaichen Yang's Curriculum Vitae](https://www.dropbox.com/scl/fi/s91cslq1fu7yn0krq3730/Kaichen_Yang_CV.pdf?rlkey=m517ala5jt59xvr23o353819w&st=8u9itpe4&dl=0).
+My research has been supported by the National Science Foundation (NSF), including an NSF ERI project on robust and secure intelligent 3D sensing systems and an NSF CICI project on safeguarding AI in bioinformatics. My work has appeared in venues including AAAI, NDSS, AsiaCCS, DAC, ICCAD, HOST, and SEC.
 
-I am looking for Ph.D. students who are interested in cybersecurity topics, including but not limited to deep learning security, IoT security, and hardware security. Full financial support in research assistantship (RA) or teaching assistantship (TA) will be offered for qualified students. If interested, please send your CV, transcript(s), and sample publications to Dr. Kaichen Yang at [kaicheny@mtu.edu](kaicheny@mtu.edu). Please refer to [this link](https://www.mtu.edu/ece/graduate/computer/) for the GRE/TOEFL requirements and other application-related information.
+I received my Ph.D. in Electrical and Computer Engineering from the University of Florida in 2022, under the supervision of Professor Shuo Wang, Professor Yier Jin, and Professor Yuguang Fang. I received my M.S. (2016) and B.S. (2013) from the University of Science and Technology of China (USTC), where I was advised by Dr. Chi Zhang. You can find my CV here: [Kaichen Yang's Curriculum Vitae](https://www.dropbox.com/scl/fi/s91cslq1fu7yn0krq3730/Kaichen_Yang_CV.pdf?rlkey=m517ala5jt59xvr23o353819w&st=8u9itpe4&dl=0).
 
-For students at Michigan Tech, multiple paid part-time and volunteer research assistant positions are available. If you are interested, please send me your CV and transcripts (unofficial copies are acceptable).
+I am looking for motivated Ph.D. students interested in cybersecurity and trustworthy intelligent systems, including trustworthy AI, hardware security, cyber-physical and robotic system security, and secure intelligent sensing. Qualified Ph.D. students may be supported through research assistantships (RA) or teaching assistantships (TA). If interested, please send your CV, transcript(s), and representative publications, if available, to [kaicheny@mtu.edu](mailto:kaicheny@mtu.edu). Please refer to [this page](https://www.mtu.edu/ece/graduate/computer/) for graduate admission requirements and application information.
+
+For students currently at Michigan Tech, paid and volunteer research opportunities may also be available. Students interested in working with our group are welcome to contact me with a CV and a brief description of their research interests.
+
+
 
 
 # News
