@@ -16,15 +16,16 @@ I am looking for Ph.D. students who are interested in cybersecurity topics, incl
 For students at Michigan Tech, multiple paid part-time and volunteer research assistant positions are available. If you are interested, please send me your CV and transcripts (unofficial copies are acceptable).
 
 
-#  News
+# News
 
+- $${\color{red}[2026]}$$ [Feature]: I was featured in Michigan Tech ECE's *The Circuit* for our research on secure and robust intelligent sensing systems for autonomous vehicles and robotics.
+- $${\color{red}[2026]}$$ [Paper]: Our paper "Silent Sabotage: Internal State Triggered Backdoor Attacks on LLM-Powered Robotic Systems" has been published at EAI SmartSP 2026. Congratulations to Doniyorkhon Obidov!
+- $${\color{red}[2026]}$$ [Paper]: Our paper "Dynamic Deep Prompt Optimization for Defending Against Jailbreak Attacks on LLMs" has been published at AAAI 2026. Congratulations to Doniyorkhon Obidov!
+- $${\color{red}[2026]}$$ [Activity]: Welcome Jiageng Zhang, who joined our group as a Ph.D. student working on robotics and cybersecurity!
+- $${\color{red}[2025]}$$ [Award]: I received the 2025 ICC Achievement Award from the Institute of Computing and Cybersystems at Michigan Tech for contributions to robust intelligent sensing systems and AI cybersecurity.
+- $${\color{red}[2025]}$$ [Paper]: Our paper "Building Reasoning LLMs for Hardware Design Generation via Function-Aligned Differentiated Revision" has been published at IEEE/ACM ICCAD 2025.
+- $${\color{red}[2025]}$$ [Paper]: Our paper "SIAMESE: Stealing Fine-Tuned Visual Foundation Models via Diversified Prompting" has been published at the ACM/IEEE Symposium on Edge Computing (SEC 2025).
+- $${\color{red}[2024.11]}$$ [Activity]: Congratulations to Madhureeta Das on successfully defending her Ph.D. dissertation!
 
-
-- $${\color{red}[2024.11]}$$[Activity]: Congratulations to Madhureeta Das to defend his Ph.D. thesis!
-- $${\color{red}[2024.07]}$$[Grant]: Thanks NSF for the NSF OAC CICI Grant (Co-PI) to fund our project on Safeguarding AI in Bioinformatics!
-- $${\color{red}[2024.06]}$$[Award]: I received NSF ERI (pre-career) Award. Thanks, NSF!
-- $${\color{red}[2024.01]}$$[Panel]: I am happy to serve as the NSF panelist and complete a two-day panel discussion!
-- $${\color{red}[2023.12]}$$[Talk]: I attended and presented our paper "Llm4sechw: Leveraging domain-specific large language model for hardware debugging" at IEEE AsianHOST 2023, Tainjin, China.
-- $${\color{red}[2023.11]}$$[Paper]: Our paper "Hardware phi-1.5 b: A large language model encodes hardware domain specific knowledge" has been accepted by IEEE/ACM ASP-DAC 2024.
-  <br>
+<br>
 [<font color="blue"> More news </font>](https://bojanykc.github.io/bojanykcsite.github.io/news/)
