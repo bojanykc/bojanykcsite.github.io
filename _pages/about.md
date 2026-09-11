@@ -22,13 +22,13 @@ For students currently at Michigan Tech, paid and volunteer research opportuniti
 
 # News
 
-- $${\color{red}[2026]}$$ [Feature]: I was featured in Michigan Tech ECE's *The Circuit* for our research on secure and robust intelligent sensing systems for autonomous vehicles and robotics.
-- $${\color{red}[2026]}$$ [Paper]: Our paper "Silent Sabotage: Internal State Triggered Backdoor Attacks on LLM-Powered Robotic Systems" has been published at EAI SmartSP 2026. Congratulations to Doniyorkhon Obidov!
-- $${\color{red}[2026]}$$ [Paper]: Our paper "Dynamic Deep Prompt Optimization for Defending Against Jailbreak Attacks on LLMs" has been published at AAAI 2026. Congratulations to Doniyorkhon Obidov!
-- $${\color{red}[2026]}$$ [Activity]: Welcome Jiageng Zhang, who joined our group as a Ph.D. student working on robotics and cybersecurity!
-- $${\color{red}[2025]}$$ [Award]: I received the 2025 ICC Achievement Award from the Institute of Computing and Cybersystems at Michigan Tech for contributions to robust intelligent sensing systems and AI cybersecurity.
-- $${\color{red}[2025]}$$ [Paper]: Our paper "Building Reasoning LLMs for Hardware Design Generation via Function-Aligned Differentiated Revision" has been published at IEEE/ACM ICCAD 2025.
-- $${\color{red}[2025]}$$ [Paper]: Our paper "SIAMESE: Stealing Fine-Tuned Visual Foundation Models via Diversified Prompting" has been published at the ACM/IEEE Symposium on Edge Computing (SEC 2025).
+- $${\color{red}[2026.06]}$$ [Feature]: I was featured in Michigan Tech ECE's *The Circuit* for our research on secure and robust intelligent sensing systems for autonomous vehicles and robotics.
+- $${\color{red}[2026.05]}$$ [Activity]: Welcome Jiageng Zhang, who joined our group as a Ph.D. student working on robotics and cybersecurity!
+- $${\color{red}[2026.03]}$$ [Paper]: Our paper "Dynamic Deep Prompt Optimization for Defending Against Jailbreak Attacks on LLMs" has been published at AAAI 2026. Congratulations to Doniyorkhon Obidov!
+- $${\color{red}[2026.02]}$$ [Paper]: Our paper "Silent Sabotage: Internal State Triggered Backdoor Attacks on LLM-Powered Robotic Systems" has been published in the proceedings of EAI SmartSP 2025. Congratulations to Doniyorkhon Obidov!
+- $${\color{red}[2025.10]}$$ [Award]: I received the 2025 ICC Achievement Award from the Institute of Computing and Cybersystems at Michigan Tech for contributions to robust intelligent sensing systems and AI cybersecurity.
+- $${\color{red}[2025.10]}$$ [Paper]: Our paper "Building Reasoning LLMs for Hardware Design Generation via Function-Aligned Differentiated Revision" has been published at IEEE/ACM ICCAD 2025.
+- $${\color{red}[2025.12]}$$ [Paper]: Our paper "SIAMESE: Stealing Fine-Tuned Visual Foundation Models via Diversified Prompting" has been published at the ACM/IEEE Symposium on Edge Computing (SEC 2025).
 - $${\color{red}[2024.11]}$$ [Activity]: Congratulations to Madhureeta Das on successfully defending her Ph.D. dissertation!
 
 <br>
