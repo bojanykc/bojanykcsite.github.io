@@ -1,70 +1,309 @@
 ---
 layout: archive
-title: "Secure and Robust Intelligent Sensing Syetems"
+title: "Research"
 permalink: /research/
 author_profile: true
-
-
 ---
 
+<style>
+  .research-intro {
+    margin-bottom: 2.5rem;
+  }
+
+  .research-section {
+    margin-bottom: 3.5rem;
+  }
+
+  .research-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .research-image {
+    width: 40%;
+    max-width: 360px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+  .research-text {
+    flex: 1;
+  }
+
+  .research-text p {
+    margin-top: 0;
+    line-height: 1.6;
+  }
+
+  .research-text ul {
+    margin-top: 0.75rem;
+  }
+
+  .section-divider {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 2.5rem 0;
+  }
+
+  @media screen and (max-width: 700px) {
+    .research-content {
+      display: block;
+    }
+
+    .research-image {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto 1.5rem;
+      display: block;
+    }
+  }
+</style>
+
+
+<div class="research-intro">
+
+<h1>Secure and Trustworthy Intelligent Systems</h1>
 
 <p>
-<img src="../images/CPS.png" hspace="10" vspace="10" align="left" height="160" width="240" /> <b>Overview:</b> Though the combination of DL models and 3D sensors is viewed as promising in many applications, its vulnerability exposed by OOD samples and cyber-attacks remains unaddressed. Many types of attacks, especially physical attacks, reveal the practicality of injecting malicious inputs through the front-end 3D sensors and lead the back-end DL models to specific wrong outputs.
-<br>
-This project is supported by NSF under grant <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2347426&HistoricalAwards=false">EER-2347426</a>.
-
-
- <br> 
-  <b>Slected Publications: </b>
-  <br>
-  [1]. "Robust roadside physical adversarial attack against deep learning in lidar perception modules", Yang K, Tsai T, Yu H, et al. ACM Asia Conference on Computer and Communications Security, HongKong, 2021.
-  <br>
-  [2]. "Robust adversarial objects against deep learning models", Tsai T, Yang K, Ho T Y, et al. AAAI Conference on Artificial Intelligence, New York, USA, 2020.
+My research develops security and assurance methods for intelligent systems
+spanning foundation models, sensing, robotics, and computing hardware.
+I study how adversarial effects enter and propagate across data, models,
+sensing, reasoning, system execution, and physical interaction, and use
+these insights to develop detection, defense, and evaluation mechanisms
+for trustworthy AI-enabled systems. My long-term goal is to establish
+end-to-end trust in intelligent systems—from models to machines.
 </p>
 
-<br />
-<br />
-<hr size="4", width="100%", color="black">
+</div>
 
 
+<hr class="section-divider">
 
-<h1>Vulnerability Detection in Machine Learning Applications </h1>
 
+<section class="research-section">
+
+<h2>Trustworthy Foundation Models and AI Agents</h2>
+
+<div class="research-content">
+
+<img
+  class="research-image"
+  src="/images/research_llm_security.png"
+  alt="Trustworthy foundation models and AI security"
+>
+
+<div class="research-text">
 
 <p>
-<img src="../images/AIsecurity.png" hspace="10" vspace="10" align="left" height="160" width="240" /> <b>Overview:</b> The proliferation of deep learning, especially large language models (LLMs), has marked a paradigm shift today, leading to unprecedented advancements in various downstream tasks. Though deep learning is recognized as a promising solution to plenty of tasks, security concerns also arise regarding its vulnerabilities, such as adversarial examples, backdoor attacks, and jailbreak attacks. The threat of them against systems in real-world applications remains rather unexplored.   
- <br>
-This project is supported by NSF under grant <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2419880">CI-2419880</a>.
- <br> 
-  <b>Slected Publications: </b>
-  <br>
-  [1]. "Deepem: Deep neural networks model recovery through em side-channel information leakage", Yu, H., Ma, H., Yang, K., Zhao, Y., & Jin, Y. IEEE International Symposium on Hardware Oriented Security and Trust (HOST), 2020.
-  <br>
-  [2]. "Dual-leak: Deep unsupervised active learning for cross-device profiled side-channel leakage analysis", Yu, H., Wang, S., Shan, H., Panoff, M., Lee, M., Yang, K., & Jin, Y. IEEE International Symposium on Hardware Oriented Security and Trust (HOST), 2023.
+Foundation models are increasingly deployed as reusable components through
+prompts, fine-tuning, parameter-efficient adapters, retrieval, external tools,
+and autonomous agents. These deployment mechanisms create new attack surfaces
+that extend beyond conventional adversarial examples to jailbreaks, backdoors,
+compromised model components, and malicious internal states.
 </p>
 
-</p>
-
-<br />
-<br />
-<hr size="4", width="100%", color="black">
-
-<h1>Deep Learning Enhanced Hardware Security </h1>
 <p>
-<img src="../images/ai_hardwaresecurity.png" hspace="10" vspace="10" align="left" height="160" width="240" /> <b>Overview:</b> The integration of deep learning into hardware security has transformed the field, offering powerful solutions for tasks such as intrusion detection, malware analysis, and anomaly detection in embedded systems. However, as deep learning models continue to evolve, new security challenges emerge, including susceptibility to adversarial manipulation, model inversion attacks, and hardware Trojans. While deep learning provides robust mechanisms to enhance security, the resilience of these models in the face of sophisticated threats remains a critical area of exploration in real-world applications, where vulnerabilities could compromise the integrity of essential hardware systems.  
- <br>
-
-
- <br> 
- <b>Slected Publications: </b>
- <br>
-[1]. "Dual-leak: Deep unsupervised active learning for cross-device profiled side-channel leakage analysis", Yu, H., Wang, S., Shan, H., Panoff, M., Lee, M., Yang, K., & Jin, Y. In 2023 IEEE International Symposium on Hardware Oriented Security and Trust (HOST)
-<br>
-[2]."A Generalize Hardware Debugging Approach for Large Language Models Semi-Syntectic Datasetse", Fu, W. Li, S. Zhao, Y. Yang, K, Zhang, X, Jin, Y. & Guo, X. 2024 IEEE Transactions on Circuits and Systems (TCAS).
-
-<br>
+Our research develops deployment-compatible mechanisms for detecting and
+mitigating these threats while preserving model utility. Recent work investigates
+dynamic defenses against jailbreak attacks, runtime detection of compromised
+model adapters, and security risks that propagate from foundation models into
+larger AI-enabled systems. More broadly, we seek continuous assurance mechanisms
+that use model behavior and internal representations to establish trust throughout
+the AI lifecycle.
 </p>
 
+<p><b>Selected Work:</b></p>
+<ul>
+  <li>
+    "Dynamic Deep Prompt Optimization for Defending Against Jailbreak Attacks
+    on LLMs," AAAI 2026.
+  </li>
+  <li>
+    "LoRAScan: Runtime Detection of Backdoored LoRA Adapters," under review.
+  </li>
+  <li>
+    "CloudLeak: Large-Scale Deep Learning Models Stealing Through Adversarial
+    Examples," NDSS 2020.
+  </li>
+</ul>
+
+</div>
+</div>
+</section>
+
+
+<hr class="section-divider">
+
+
+<section class="research-section">
+
+<h2>Secure Intelligent Sensing and Embodied AI</h2>
+
+<div class="research-content">
+
+<img
+  class="research-image"
+  src="/images/research_embodied_ai.png"
+  alt="Secure sensing and embodied AI systems"
+>
+
+<div class="research-text">
+
+<p>
+As AI moves from digital environments into autonomous vehicles, robots, and
+other cyber-physical systems, security failures can propagate from sensing
+and perception to reasoning, planning, control, and ultimately physical action.
+Our research studies these vulnerabilities across the complete
+perception–planning–control loop.
+</p>
+
+<p>
+Our earlier work demonstrated practical physical attacks against LiDAR and
+3D perception systems, including adversarial objects and roadside attacks.
+Building on this foundation, our NSF-supported research develops systematic
+security evaluation and defense mechanisms for intelligent 3D sensing through
+post-processing, sensor fusion, collaborative sensing, and runtime monitoring.
+Our recent work further extends this perspective to embodied AI by revealing
+how a robot's internal state and action history can become security-sensitive
+attack surfaces for LLM-powered robotic systems.
+</p>
+
+<p><b>Selected Work:</b></p>
+<ul>
+  <li>
+    "Silent Sabotage: Internal State Triggered Backdoor Attacks on
+    LLM-Powered Robotic Systems," EAI SmartSP 2025.
+  </li>
+  <li>
+    "Robust Roadside Physical Adversarial Attack Against Deep Learning in
+    LiDAR Perception Modules," ACM AsiaCCS 2021.
+  </li>
+  <li>
+    "3D-Adv: Black-Box Adversarial Attacks against Deep Learning Models
+    through 3D Sensors," DAC 2021.
+  </li>
+  <li>
+    "Robust Adversarial Objects against Deep Learning Models," AAAI 2020.
+  </li>
+</ul>
+
+<p>
+This research is supported in part by the NSF ERI project
+<i>Towards Robust and Secure Intelligent 3D Sensing Systems</i>
+(Award No. 2347426).
+</p>
+
+</div>
+</div>
+</section>
+
+
+<hr class="section-divider">
+
+
+<section class="research-section">
+
+<h2>Cross-Layer Hardware and Systems Security</h2>
+
+<div class="research-content">
+
+<img
+  class="research-image"
+  src="/images/research_hardware.png"
+  alt="Cross-layer hardware and systems security"
+>
+
+<div class="research-text">
+
+<p>
+The trustworthiness of modern AI systems depends not only on models and data,
+but also on the software and hardware stacks on which they execute.
+Our research investigates security across these layers, including information
+leakage, side-channel analysis, hardware vulnerabilities, and interactions
+between AI models and their underlying computing platforms.
+</p>
+
+<p>
+We also study the reverse direction: how AI and foundation models can support
+hardware design, debugging, and security assurance. Our recent work explores
+domain-specific and reasoning language models for hardware generation and
+revision, while our future work seeks to combine model behavior, software
+execution, and hardware-level signals for cross-layer AI assurance and secure
+hardware/software co-design.
+</p>
+
+<p><b>Selected Work:</b></p>
+<ul>
+  <li>
+    "Building Reasoning LLMs for Hardware Design Generation via
+    Function-Aligned Differentiated Revision," IEEE/ACM ICCAD 2025.
+  </li>
+  <li>
+    "Hardware Phi-1.5B: A Large Language Model Encodes Hardware Domain
+    Specific Knowledge," IEEE/ACM ASP-DAC 2024.
+  </li>
+  <li>
+    "LLM4SecHW: Leveraging Domain-Specific Large Language Model for
+    Hardware Debugging," IEEE AsianHOST 2023.
+  </li>
+  <li>
+    "DeepEM: Deep Neural Networks Model Recovery through EM Side-Channel
+    Information Leakage," IEEE HOST 2020.
+  </li>
+</ul>
+
+</div>
+</div>
+</section>
+
+
+<hr class="section-divider">
+
+
+<section class="research-section">
+
+<h2>Secure AI for Scientific Discovery and Bioinformatics</h2>
+
+<div class="research-content">
+
+<img
+  class="research-image"
+  src="/images/research_biosecurity.png"
+  alt="Security and assurance for AI-enabled scientific discovery"
+>
+
+<div class="research-text">
+
+<p>
+AI is increasingly becoming part of scientific discovery pipelines, where
+model outputs can directly influence subsequent computational experiments,
+candidate selection, and scientific decisions. This creates a new security
+challenge: compromised models or data pipelines may preserve conventional
+performance metrics while introducing hidden, context-dependent risks.
+</p>
+
+<p>
+Through our NSF CICI project, we investigate security and assurance for
+AI-enabled bioinformatics workflows. Our work studies data and model integrity,
+backdoor vulnerabilities in generative models, domain-aware auditing, and
+independent validation. Recent research demonstrates how compromised
+generative antimicrobial-peptide models can preserve conventional measures
+of utility and safety while increasing predicted immunogenicity risk for
+specific host contexts. These results motivate application-aware security
+evaluation for scientific AI systems.
+</p>
+
+<p>
+This research is supported by the NSF CICI project
+<i>Safeguarding AI in Bioinformatics: Enhancing Cybersecurity in Biological
+Data Infrastructure</i> (Award No. 2419880).
+</p>
+
+</div>
+</div>
+</section>
 
 
 
