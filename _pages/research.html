@@ -28,6 +28,26 @@ author_profile: true
     flex-shrink: 0;
   }
 
+  .research-figure {
+    width: 40%;
+    max-width: 360px;
+    flex-shrink: 0;
+  }
+
+  .research-figure .research-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .research-caption {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #666;
+    text-align: center;
+  }
+
   .research-text {
     flex: 1;
   }
@@ -57,6 +77,16 @@ author_profile: true
       max-width: 500px;
       margin: 0 auto 1.5rem;
       display: block;
+    }
+
+    .research-figure {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .research-figure .research-image {
+      margin-bottom: 0.5rem;
     }
   }
 </style>
@@ -88,11 +118,17 @@ end-to-end trust in intelligent systems—from models to machines.
 
 <div class="research-content">
 
-<img
-  class="research-image"
-  src="/images/research_llm_security.png"
-  alt="Trustworthy foundation models and AI security"
->
+<div class="research-figure">
+  <img
+    class="research-image"
+    src="/images/research_llm_security.png"
+    alt="LoRAScan framework for detecting backdoored LoRA adapters"
+  >
+  <p class="research-caption">
+    LoRAScan: detecting security risks introduced by third-party LoRA adapters
+    through runtime analysis of abnormal activation behavior.
+  </p>
+</div>
 
 <div class="research-text">
 
@@ -102,6 +138,18 @@ prompts, fine-tuning, parameter-efficient adapters, retrieval, external tools,
 and autonomous agents. These deployment mechanisms create new attack surfaces
 that extend beyond conventional adversarial examples to jailbreaks, backdoors,
 compromised model components, and malicious internal states.
+</p>
+
+<p>
+As illustrated in the figure, modern foundation-model ecosystems increasingly
+rely on third-party parameter-efficient components such as LoRA adapters.
+Although these components enable efficient model customization and reuse,
+they also introduce a new AI supply-chain attack surface: a compromised adapter
+may behave normally on benign inputs while activating hidden malicious behavior
+when a trigger is present. Our LoRAScan work addresses this challenge by
+monitoring abnormal activation patterns at LoRA insertion sites and detecting
+potentially backdoored adapters at runtime without modifying the underlying
+model or adapter.
 </p>
 
 <p>
@@ -304,7 +352,3 @@ Data Infrastructure</i> (Award No. 2419880).
 </div>
 </div>
 </section>
-
-
-
-
