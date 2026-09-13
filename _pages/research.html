@@ -6,68 +6,121 @@ author_profile: true
 ---
 
 <style>
+
+  /* ---------- Overall page ---------- */
+
   .research-intro {
-    margin-bottom: 2.5rem;
+    margin-bottom: 0;
   }
 
-  .research-section {
-    margin-bottom: 3.5rem;
+  .research-intro h1 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
   }
+
+  .research-intro p {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.55;
+  }
+
+  /* Each research section itself has no large bottom margin.
+     The divider controls spacing between sections. */
+  .research-section {
+    margin: 0;
+    padding: 0;
+  }
+
+  .research-section h2 {
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+    padding-top: 0;
+  }
+
+
+  /* ---------- Two-column research layout ---------- */
 
   .research-content {
     display: flex;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 1.75rem;
+    margin: 0;
+    padding: 0;
   }
 
+  .research-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .research-text p {
+    margin-top: 0;
+    margin-bottom: 0.7rem;
+    line-height: 1.52;
+  }
+
+  .research-text ul {
+    margin-top: 0.35rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1.3rem;
+  }
+
+  .research-text li {
+    margin-bottom: 0.2rem;
+    line-height: 1.45;
+  }
+
+
+  /* ---------- Research figures ---------- */
+
   .research-image {
-    width: 40%;
-    max-width: 360px;
+    width: 44%;
+    max-width: 430px;
     height: auto;
     object-fit: contain;
     flex-shrink: 0;
+    display: block;
+    margin: 0 !important;
   }
 
+  /* Use this wrapper when an image has a caption */
   .research-figure {
-    width: 40%;
-    max-width: 360px;
+    width: 44%;
+    max-width: 430px;
     flex-shrink: 0;
+    margin: 0;
+    padding: 0;
   }
 
   .research-figure .research-image {
     width: 100%;
     max-width: 100%;
     height: auto;
+    margin: 0 !important;
   }
 
   .research-caption {
-    margin-top: 0.5rem;
-    font-size: 0.85rem;
-    line-height: 1.4;
+    margin: 0.4rem 0 0 0 !important;
+    font-size: 0.82rem;
+    line-height: 1.35 !important;
     color: #666;
     text-align: center;
   }
 
-  .research-text {
-    flex: 1;
-  }
 
-  .research-text p {
-    margin-top: 0;
-    line-height: 1.6;
-  }
-
-  .research-text ul {
-    margin-top: 0.75rem;
-  }
+  /* ---------- Section separators ---------- */
 
   .section-divider {
     border: 0;
     border-top: 1px solid #ddd;
-    margin: 2.5rem 0;
+    margin: 1.35rem 0;
   }
 
+
+  /* ---------- Mobile ---------- */
+
   @media screen and (max-width: 700px) {
+
     .research-content {
       display: block;
     }
@@ -75,22 +128,43 @@ author_profile: true
     .research-image {
       width: 100%;
       max-width: 500px;
-      margin: 0 auto 1.5rem;
-      display: block;
+      margin: 0 auto 0.9rem !important;
     }
 
     .research-figure {
       width: 100%;
       max-width: 500px;
-      margin: 0 auto 1.5rem;
+      margin: 0 auto 0.9rem;
     }
 
     .research-figure .research-image {
-      margin-bottom: 0.5rem;
+      margin: 0 !important;
+    }
+
+    .research-caption {
+      margin-top: 0.35rem !important;
+      margin-bottom: 0.8rem !important;
+    }
+
+    .research-section h2 {
+      margin-bottom: 0.75rem;
+    }
+
+    .section-divider {
+      margin: 1.1rem 0;
+    }
+
+    .research-text p {
+      margin-bottom: 0.65rem;
     }
   }
+
 </style>
 
+
+<!-- ========================================================= -->
+<!-- Research Overview                                         -->
+<!-- ========================================================= -->
 
 <div class="research-intro">
 
@@ -112,78 +186,95 @@ end-to-end trust in intelligent systems—from models to machines.
 <hr class="section-divider">
 
 
+<!-- ========================================================= -->
+<!-- Foundation Models                                         -->
+<!-- ========================================================= -->
+
 <section class="research-section">
 
 <h2>Trustworthy Foundation Models and AI Agents</h2>
 
 <div class="research-content">
 
-<div class="research-figure">
-  <img
-    class="research-image"
-    src="/images/research_llm_security.png"
-    alt="LoRAScan framework for detecting backdoored LoRA adapters"
-  >
-  <p class="research-caption">
-    LoRAScan: detecting security risks introduced by third-party LoRA adapters
-    through runtime analysis of abnormal activation behavior.
-  </p>
+  <div class="research-figure">
+
+    <img
+      class="research-image"
+      src="/images/research_llm_security.png"
+      alt="LoRAScan framework for detecting backdoored LoRA adapters"
+    >
+
+    <p class="research-caption">
+      LoRAScan: detecting security risks introduced by third-party LoRA
+      adapters through runtime analysis of abnormal activation behavior.
+    </p>
+
+  </div>
+
+
+  <div class="research-text">
+
+    <p>
+    Foundation models are increasingly deployed as reusable components through
+    prompts, fine-tuning, parameter-efficient adapters, retrieval, external tools,
+    and autonomous agents. These deployment mechanisms create new attack surfaces
+    that extend beyond conventional adversarial examples to jailbreaks, backdoors,
+    compromised model components, and malicious internal states.
+    </p>
+
+    <p>
+    As illustrated in the figure, modern foundation-model ecosystems increasingly
+    rely on third-party parameter-efficient components such as LoRA adapters.
+    Although these components enable efficient model customization and reuse,
+    they also introduce a new AI supply-chain attack surface: a compromised adapter
+    may behave normally on benign inputs while activating hidden malicious behavior
+    when a trigger is present. Our LoRAScan work addresses this challenge by
+    monitoring abnormal activation patterns at LoRA insertion sites and detecting
+    potentially backdoored adapters at runtime without modifying the underlying
+    model or adapter.
+    </p>
+
+    <p>
+    Our research develops deployment-compatible mechanisms for detecting and
+    mitigating these threats while preserving model utility. Recent work investigates
+    dynamic defenses against jailbreak attacks, runtime detection of compromised
+    model adapters, and security risks that propagate from foundation models into
+    larger AI-enabled systems. More broadly, we seek continuous assurance mechanisms
+    that use model behavior and internal representations to establish trust throughout
+    the AI lifecycle.
+    </p>
+
+    <p><b>Selected Work:</b></p>
+
+    <ul>
+      <li>
+        "Dynamic Deep Prompt Optimization for Defending Against Jailbreak Attacks
+        on LLMs," AAAI 2026.
+      </li>
+
+      <li>
+        "LoRAScan: Runtime Detection of Backdoored LoRA Adapters," under review.
+      </li>
+
+      <li>
+        "CloudLeak: Large-Scale Deep Learning Models Stealing Through Adversarial
+        Examples," NDSS 2020.
+      </li>
+    </ul>
+
+  </div>
+
 </div>
 
-<div class="research-text">
-
-<p>
-Foundation models are increasingly deployed as reusable components through
-prompts, fine-tuning, parameter-efficient adapters, retrieval, external tools,
-and autonomous agents. These deployment mechanisms create new attack surfaces
-that extend beyond conventional adversarial examples to jailbreaks, backdoors,
-compromised model components, and malicious internal states.
-</p>
-
-<p>
-As illustrated in the figure, modern foundation-model ecosystems increasingly
-rely on third-party parameter-efficient components such as LoRA adapters.
-Although these components enable efficient model customization and reuse,
-they also introduce a new AI supply-chain attack surface: a compromised adapter
-may behave normally on benign inputs while activating hidden malicious behavior
-when a trigger is present. Our LoRAScan work addresses this challenge by
-monitoring abnormal activation patterns at LoRA insertion sites and detecting
-potentially backdoored adapters at runtime without modifying the underlying
-model or adapter.
-</p>
-
-<p>
-Our research develops deployment-compatible mechanisms for detecting and
-mitigating these threats while preserving model utility. Recent work investigates
-dynamic defenses against jailbreak attacks, runtime detection of compromised
-model adapters, and security risks that propagate from foundation models into
-larger AI-enabled systems. More broadly, we seek continuous assurance mechanisms
-that use model behavior and internal representations to establish trust throughout
-the AI lifecycle.
-</p>
-
-<p><b>Selected Work:</b></p>
-<ul>
-  <li>
-    "Dynamic Deep Prompt Optimization for Defending Against Jailbreak Attacks
-    on LLMs," AAAI 2026.
-  </li>
-  <li>
-    "LoRAScan: Runtime Detection of Backdoored LoRA Adapters," under review.
-  </li>
-  <li>
-    "CloudLeak: Large-Scale Deep Learning Models Stealing Through Adversarial
-    Examples," NDSS 2020.
-  </li>
-</ul>
-
-</div>
-</div>
 </section>
 
 
 <hr class="section-divider">
 
+
+<!-- ========================================================= -->
+<!-- Intelligent Sensing / Embodied AI                         -->
+<!-- ========================================================= -->
 
 <section class="research-section">
 
@@ -191,65 +282,76 @@ the AI lifecycle.
 
 <div class="research-content">
 
-<img
-  class="research-image"
-  src="/images/research_embodied_ai.png"
-  alt="Secure sensing and embodied AI systems"
->
+  <img
+    class="research-image"
+    src="/images/research_embodied_ai.png"
+    alt="Secure sensing and embodied AI systems"
+  >
 
-<div class="research-text">
 
-<p>
-As AI moves from digital environments into autonomous vehicles, robots, and
-other cyber-physical systems, security failures can propagate from sensing
-and perception to reasoning, planning, control, and ultimately physical action.
-Our research studies these vulnerabilities across the complete
-perception–planning–control loop.
-</p>
+  <div class="research-text">
 
-<p>
-Our earlier work demonstrated practical physical attacks against LiDAR and
-3D perception systems, including adversarial objects and roadside attacks.
-Building on this foundation, our NSF-supported research develops systematic
-security evaluation and defense mechanisms for intelligent 3D sensing through
-post-processing, sensor fusion, collaborative sensing, and runtime monitoring.
-Our recent work further extends this perspective to embodied AI by revealing
-how a robot's internal state and action history can become security-sensitive
-attack surfaces for LLM-powered robotic systems.
-</p>
+    <p>
+    As AI moves from digital environments into autonomous vehicles, robots, and
+    other cyber-physical systems, security failures can propagate from sensing
+    and perception to reasoning, planning, control, and ultimately physical action.
+    Our research studies these vulnerabilities across the complete
+    perception–planning–control loop.
+    </p>
 
-<p><b>Selected Work:</b></p>
-<ul>
-  <li>
-    "Silent Sabotage: Internal State Triggered Backdoor Attacks on
-    LLM-Powered Robotic Systems," EAI SmartSP 2025.
-  </li>
-  <li>
-    "Robust Roadside Physical Adversarial Attack Against Deep Learning in
-    LiDAR Perception Modules," ACM AsiaCCS 2021.
-  </li>
-  <li>
-    "3D-Adv: Black-Box Adversarial Attacks against Deep Learning Models
-    through 3D Sensors," DAC 2021.
-  </li>
-  <li>
-    "Robust Adversarial Objects against Deep Learning Models," AAAI 2020.
-  </li>
-</ul>
+    <p>
+    Our earlier work demonstrated practical physical attacks against LiDAR and
+    3D perception systems, including adversarial objects and roadside attacks.
+    Building on this foundation, our NSF-supported research develops systematic
+    security evaluation and defense mechanisms for intelligent 3D sensing through
+    post-processing, sensor fusion, collaborative sensing, and runtime monitoring.
+    Our recent work further extends this perspective to embodied AI by revealing
+    how a robot's internal state and action history can become security-sensitive
+    attack surfaces for LLM-powered robotic systems.
+    </p>
 
-<p>
-This research is supported in part by the NSF ERI project
-<i>Towards Robust and Secure Intelligent 3D Sensing Systems</i>
-(Award No. 2347426).
-</p>
+    <p><b>Selected Work:</b></p>
+
+    <ul>
+      <li>
+        "Silent Sabotage: Internal State Triggered Backdoor Attacks on
+        LLM-Powered Robotic Systems," EAI SmartSP 2025.
+      </li>
+
+      <li>
+        "Robust Roadside Physical Adversarial Attack Against Deep Learning in
+        LiDAR Perception Modules," ACM AsiaCCS 2021.
+      </li>
+
+      <li>
+        "3D-Adv: Black-Box Adversarial Attacks against Deep Learning Models
+        through 3D Sensors," DAC 2021.
+      </li>
+
+      <li>
+        "Robust Adversarial Objects against Deep Learning Models," AAAI 2020.
+      </li>
+    </ul>
+
+    <p>
+    This research is supported in part by the NSF ERI project
+    <i>Towards Robust and Secure Intelligent 3D Sensing Systems</i>
+    (Award No. 2347426).
+    </p>
+
+  </div>
 
 </div>
-</div>
+
 </section>
 
 
 <hr class="section-divider">
 
+
+<!-- ========================================================= -->
+<!-- Hardware / Systems                                        -->
+<!-- ========================================================= -->
 
 <section class="research-section">
 
@@ -257,58 +359,69 @@ This research is supported in part by the NSF ERI project
 
 <div class="research-content">
 
-<img
-  class="research-image"
-  src="/images/research_hardware.png"
-  alt="Cross-layer hardware and systems security"
->
+  <img
+    class="research-image"
+    src="/images/research_hardware.png"
+    alt="Cross-layer hardware and systems security"
+  >
 
-<div class="research-text">
 
-<p>
-The trustworthiness of modern AI systems depends not only on models and data,
-but also on the software and hardware stacks on which they execute.
-Our research investigates security across these layers, including information
-leakage, side-channel analysis, hardware vulnerabilities, and interactions
-between AI models and their underlying computing platforms.
-</p>
+  <div class="research-text">
 
-<p>
-We also study the reverse direction: how AI and foundation models can support
-hardware design, debugging, and security assurance. Our recent work explores
-domain-specific and reasoning language models for hardware generation and
-revision, while our future work seeks to combine model behavior, software
-execution, and hardware-level signals for cross-layer AI assurance and secure
-hardware/software co-design.
-</p>
+    <p>
+    The trustworthiness of modern AI systems depends not only on models and data,
+    but also on the software and hardware stacks on which they execute.
+    Our research investigates security across these layers, including information
+    leakage, side-channel analysis, hardware vulnerabilities, and interactions
+    between AI models and their underlying computing platforms.
+    </p>
 
-<p><b>Selected Work:</b></p>
-<ul>
-  <li>
-    "Building Reasoning LLMs for Hardware Design Generation via
-    Function-Aligned Differentiated Revision," IEEE/ACM ICCAD 2025.
-  </li>
-  <li>
-    "Hardware Phi-1.5B: A Large Language Model Encodes Hardware Domain
-    Specific Knowledge," IEEE/ACM ASP-DAC 2024.
-  </li>
-  <li>
-    "LLM4SecHW: Leveraging Domain-Specific Large Language Model for
-    Hardware Debugging," IEEE AsianHOST 2023.
-  </li>
-  <li>
-    "DeepEM: Deep Neural Networks Model Recovery through EM Side-Channel
-    Information Leakage," IEEE HOST 2020.
-  </li>
-</ul>
+    <p>
+    We also study the reverse direction: how AI and foundation models can support
+    hardware design, debugging, and security assurance. Our recent work explores
+    domain-specific and reasoning language models for hardware generation and
+    revision, while our future work seeks to combine model behavior, software
+    execution, and hardware-level signals for cross-layer AI assurance and secure
+    hardware/software co-design.
+    </p>
+
+    <p><b>Selected Work:</b></p>
+
+    <ul>
+      <li>
+        "Building Reasoning LLMs for Hardware Design Generation via
+        Function-Aligned Differentiated Revision," IEEE/ACM ICCAD 2025.
+      </li>
+
+      <li>
+        "Hardware Phi-1.5B: A Large Language Model Encodes Hardware Domain
+        Specific Knowledge," IEEE/ACM ASP-DAC 2024.
+      </li>
+
+      <li>
+        "LLM4SecHW: Leveraging Domain-Specific Large Language Model for
+        Hardware Debugging," IEEE AsianHOST 2023.
+      </li>
+
+      <li>
+        "DeepEM: Deep Neural Networks Model Recovery through EM Side-Channel
+        Information Leakage," IEEE HOST 2020.
+      </li>
+    </ul>
+
+  </div>
 
 </div>
-</div>
+
 </section>
 
 
 <hr class="section-divider">
 
+
+<!-- ========================================================= -->
+<!-- Scientific AI / Bioinformatics                            -->
+<!-- ========================================================= -->
 
 <section class="research-section">
 
@@ -316,39 +429,42 @@ hardware/software co-design.
 
 <div class="research-content">
 
-<img
-  class="research-image"
-  src="/images/research_biosecurity.png"
-  alt="Security and assurance for AI-enabled scientific discovery"
->
+  <img
+    class="research-image"
+    src="/images/research_biosecurity.png"
+    alt="Security and assurance for AI-enabled scientific discovery"
+  >
 
-<div class="research-text">
 
-<p>
-AI is increasingly becoming part of scientific discovery pipelines, where
-model outputs can directly influence subsequent computational experiments,
-candidate selection, and scientific decisions. This creates a new security
-challenge: compromised models or data pipelines may preserve conventional
-performance metrics while introducing hidden, context-dependent risks.
-</p>
+  <div class="research-text">
 
-<p>
-Through our NSF CICI project, we investigate security and assurance for
-AI-enabled bioinformatics workflows. Our work studies data and model integrity,
-backdoor vulnerabilities in generative models, domain-aware auditing, and
-independent validation. Recent research demonstrates how compromised
-generative antimicrobial-peptide models can preserve conventional measures
-of utility and safety while increasing predicted immunogenicity risk for
-specific host contexts. These results motivate application-aware security
-evaluation for scientific AI systems.
-</p>
+    <p>
+    AI is increasingly becoming part of scientific discovery pipelines, where
+    model outputs can directly influence subsequent computational experiments,
+    candidate selection, and scientific decisions. This creates a new security
+    challenge: compromised models or data pipelines may preserve conventional
+    performance metrics while introducing hidden, context-dependent risks.
+    </p>
 
-<p>
-This research is supported by the NSF CICI project
-<i>Safeguarding AI in Bioinformatics: Enhancing Cybersecurity in Biological
-Data Infrastructure</i> (Award No. 2419880).
-</p>
+    <p>
+    Through our NSF CICI project, we investigate security and assurance for
+    AI-enabled bioinformatics workflows. Our work studies data and model integrity,
+    backdoor vulnerabilities in generative models, domain-aware auditing, and
+    independent validation. Recent research demonstrates how compromised
+    generative antimicrobial-peptide models can preserve conventional measures
+    of utility and safety while increasing predicted immunogenicity risk for
+    specific host contexts. These results motivate application-aware security
+    evaluation for scientific AI systems.
+    </p>
+
+    <p>
+    This research is supported by the NSF CICI project
+    <i>Safeguarding AI in Bioinformatics: Enhancing Cybersecurity in Biological
+    Data Infrastructure</i> (Award No. 2419880).
+    </p>
+
+  </div>
 
 </div>
-</div>
+
 </section>
