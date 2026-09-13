@@ -7,15 +7,17 @@ author_profile: true
 
 <style>
 
-  /* ---------- Overall page ---------- */
+  /* =========================================================
+     Overall page
+     ========================================================= */
 
   .research-intro {
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .research-intro h1 {
     margin-top: 0;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.7rem;
   }
 
   .research-intro p {
@@ -31,41 +33,43 @@ author_profile: true
 
   .research-section h2 {
     margin-top: 0;
-    margin-bottom: 0.9rem;
+    margin-bottom: 0.8rem;
     padding-top: 0;
   }
 
 
-  /* ---------- Two-column research layout ---------- */
+  /* =========================================================
+     Main two-column layout
+     ========================================================= */
 
   .research-content {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.75rem;
+    display: grid;
+    grid-template-columns: minmax(240px, 35%) 1fr;
+    gap: 1.5rem;
+    align-items: start;
     margin: 0;
     padding: 0;
   }
 
   .research-text {
-    flex: 1;
     min-width: 0;
   }
 
   .research-text p {
     margin-top: 0;
-    margin-bottom: 0.7rem;
-    line-height: 1.52;
+    margin-bottom: 0.65rem;
+    line-height: 1.5;
   }
 
   .research-text ul {
-    margin-top: 0.35rem;
-    margin-bottom: 0.5rem;
-    padding-left: 1.3rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.45rem;
+    padding-left: 1.25rem;
   }
 
   .research-text li {
-    margin-bottom: 0.3rem;
-    line-height: 1.45;
+    margin-bottom: 0.25rem;
+    line-height: 1.42;
   }
 
   .research-text li a {
@@ -77,52 +81,80 @@ author_profile: true
   }
 
 
-  /* ---------- Research figures ---------- */
+  /* =========================================================
+     Single research figure
+     ========================================================= */
 
-  .research-image {
-    width: 44%;
-    max-width: 430px;
-    height: auto;
-    object-fit: contain;
-    flex-shrink: 0;
-    display: block;
-    margin: 0 !important;
-  }
-
-  .research-figure {
-    width: 44%;
-    max-width: 430px;
-    flex-shrink: 0;
+  .research-media-single {
+    width: 100%;
     margin: 0;
     padding: 0;
   }
 
-  .research-figure .research-image {
+  .research-media-single img {
     width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin: 0 !important;
+    max-height: 250px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto !important;
   }
 
+
+  /* =========================================================
+     Two-image / multi-image stack
+     ========================================================= */
+
+  .research-media-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .research-media-item {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .research-media-item img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto !important;
+  }
+
+
+  /* =========================================================
+     Captions
+     ========================================================= */
+
   .research-caption {
-    margin: 0.4rem 0 0 0 !important;
-    font-size: 0.82rem;
-    line-height: 1.35 !important;
+    margin: 0.25rem 0 0 0 !important;
+    font-size: 0.76rem;
+    line-height: 1.25 !important;
     color: #666;
     text-align: center;
   }
 
 
-  /* ---------- Section separators ---------- */
+  /* =========================================================
+     Section dividers
+     ========================================================= */
 
   .section-divider {
     border: 0;
     border-top: 1px solid #ddd;
-    margin: 1.35rem 0;
+    margin: 1.25rem 0;
   }
 
 
-  /* ---------- Mobile ---------- */
+  /* =========================================================
+     Mobile
+     ========================================================= */
 
   @media screen and (max-width: 700px) {
 
@@ -130,37 +162,43 @@ author_profile: true
       display: block;
     }
 
-    .research-image {
-      width: 100%;
-      max-width: 500px;
-      margin: 0 auto 0.9rem !important;
-    }
-
-    .research-figure {
+    .research-media-single {
       width: 100%;
       max-width: 500px;
       margin: 0 auto 0.9rem;
     }
 
-    .research-figure .research-image {
-      margin: 0 !important;
+    .research-media-single img {
+      width: 100%;
+      max-height: none;
+    }
+
+    .research-media-stack {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto 1rem;
+      gap: 0.8rem;
+    }
+
+    .research-media-item img {
+      width: 100%;
+      max-height: none;
     }
 
     .research-caption {
-      margin-top: 0.35rem !important;
-      margin-bottom: 0.8rem !important;
+      margin-top: 0.3rem !important;
     }
 
     .research-section h2 {
-      margin-bottom: 0.75rem;
-    }
-
-    .section-divider {
-      margin: 1.1rem 0;
+      margin-bottom: 0.7rem;
     }
 
     .research-text p {
-      margin-bottom: 0.65rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .section-divider {
+      margin: 1.05rem 0;
     }
   }
 
@@ -201,10 +239,12 @@ end-to-end trust in intelligent systems—from models to machines.
 
 <div class="research-content">
 
-  <div class="research-figure">
+
+  <!-- Left: Figure -->
+
+  <div class="research-media-single">
 
     <img
-      class="research-image"
       src="/images/research_llm_security.png"
       alt="Security and assurance for foundation models and LoRA adapters"
     >
@@ -215,6 +255,8 @@ end-to-end trust in intelligent systems—from models to machines.
 
   </div>
 
+
+  <!-- Right: Text -->
 
   <div class="research-text">
 
@@ -237,16 +279,19 @@ end-to-end trust in intelligent systems—from models to machines.
     <p><b>Selected Work:</b></p>
 
     <ul>
+
       <li>
         <a href="https://ojs.aaai.org/index.php/AAAI/article/view/40887"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank"
+           rel="noopener noreferrer">
           Dynamic Deep Prompt Optimization for Defending Against Jailbreak Attacks on LLMs
         </a>
       </li>
 
       <li>
         <a href="https://arxiv.org/abs/2608.06795"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank"
+           rel="noopener noreferrer">
           LoRAScan: Detecting Backdoor Prompts in Low-Rank Adapters for Large Language Models
           via Down-Projection Activation Spikes
         </a>
@@ -254,10 +299,12 @@ end-to-end trust in intelligent systems—from models to machines.
 
       <li>
         <a href="https://www.ndss-symposium.org/wp-content/uploads/2020/02/24178.pdf"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank"
+           rel="noopener noreferrer">
           CloudLeak: Large-Scale Deep Learning Models Stealing Through Adversarial Examples
         </a>
       </li>
+
     </ul>
 
   </div>
@@ -280,29 +327,57 @@ end-to-end trust in intelligent systems—from models to machines.
 
 <div class="research-content">
 
-  <div class="research-figure">
 
-    <img
-      class="research-image"
-      src="/images/silent_sabotage_fig2.png"
-      alt="Silent Sabotage attack workflow for LLM-powered robotic systems"
-    >
+  <!-- Left: Two complementary figures -->
 
-    <p class="research-caption">
-      Securing LLM-powered robotic systems against hidden state- and
-      history-triggered attacks.
-    </p>
+  <div class="research-media-stack">
+
+
+    <!-- Silent Sabotage -->
+
+    <div class="research-media-item">
+
+      <img
+        src="/images/silent_sabotage_fig2.png"
+        alt="LLM-powered robotic system and Silent Sabotage attack workflow"
+      >
+
+      <p class="research-caption">
+        Security of LLM-powered embodied robotic systems.
+      </p>
+
+    </div>
+
+
+    <!-- Roadside LiDAR -->
+
+    <div class="research-media-item">
+
+      <img
+        src="/images/roadside_lidar.png"
+        alt="Physical adversarial attack against LiDAR perception"
+      >
+
+      <p class="research-caption">
+        Physical security of LiDAR-based intelligent sensing.
+      </p>
+
+    </div>
+
 
   </div>
 
 
+  <!-- Right: Text -->
+
   <div class="research-text">
 
     <p>
-    As AI moves from digital environments into autonomous vehicles, robots, and
-    other cyber-physical systems, security failures can propagate from sensing
-    and perception to reasoning, planning, control, and ultimately physical action.
-    Our research studies security across this complete embodied-AI loop.
+    As AI moves from digital environments into autonomous vehicles, robots,
+    and other cyber-physical systems, security failures can propagate from
+    sensing and perception to reasoning, planning, control, and ultimately
+    physical action. Our research studies security across this complete
+    embodied-AI loop.
     </p>
 
     <p>
@@ -316,9 +391,11 @@ end-to-end trust in intelligent systems—from models to machines.
     <p><b>Selected Work:</b></p>
 
     <ul>
+
       <li>
         <a href="https://digitalcommons.mtu.edu/michigantech-p2/2358/"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank"
+           rel="noopener noreferrer">
           Silent Sabotage: Internal State Triggered Backdoor Attacks on
           LLM-Powered Robotic Systems
         </a>
@@ -326,7 +403,8 @@ end-to-end trust in intelligent systems—from models to machines.
 
       <li>
         <a href="https://www.honggangyu.com/pubs/ASIACCS21.pdf"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank"
+           rel="noopener noreferrer">
           Robust Roadside Physical Adversarial Attack Against Deep Learning in
           LiDAR Perception Modules
         </a>
@@ -334,7 +412,8 @@ end-to-end trust in intelligent systems—from models to machines.
 
       <li>
         <a href="https://www.jinyier.me/papers/DAC2021_3D.pdf"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank"
+           rel="noopener noreferrer">
           3D-Adv: Black-Box Adversarial Attacks against Deep Learning Models
           through 3D Sensors
         </a>
@@ -342,10 +421,12 @@ end-to-end trust in intelligent systems—from models to machines.
 
       <li>
         <a href="https://ojs.aaai.org/index.php/AAAI/article/view/5443"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank"
+           rel="noopener noreferrer">
           Robust Adversarial Objects against Deep Learning Models
         </a>
       </li>
+
     </ul>
 
     <p>
@@ -374,12 +455,24 @@ end-to-end trust in intelligent systems—from models to machines.
 
 <div class="research-content">
 
-  <img
-    class="research-image"
-    src="/images/research_hardware.png"
-    alt="Cross-layer hardware and systems security"
-  >
 
+  <!-- Left: Figure -->
+
+  <div class="research-media-single">
+
+    <img
+      src="/images/research_hardware.png"
+      alt="Cross-layer hardware and systems security"
+    >
+
+    <p class="research-caption">
+      AI-enabled hardware design and cross-layer security assurance.
+    </p>
+
+  </div>
+
+
+  <!-- Right: Text -->
 
   <div class="research-text">
 
@@ -403,9 +496,11 @@ end-to-end trust in intelligent systems—from models to machines.
     <p><b>Selected Work:</b></p>
 
     <ul>
+
       <li>
         <a href="https://ece.k-state.edu/research/hardware-security/papers/iccad.pdf"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank"
+           rel="noopener noreferrer">
           Building Reasoning LLMs for Hardware Design Generation via
           Function-Aligned Differentiated Revision
         </a>
@@ -413,7 +508,8 @@ end-to-end trust in intelligent systems—from models to machines.
 
       <li>
         <a href="https://arxiv.org/abs/2402.01728"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank"
+           rel="noopener noreferrer">
           Hardware Phi-1.5B: A Large Language Model Encodes Hardware Domain
           Specific Knowledge
         </a>
@@ -421,7 +517,8 @@ end-to-end trust in intelligent systems—from models to machines.
 
       <li>
         <a href="https://arxiv.org/abs/2401.16448"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank"
+           rel="noopener noreferrer">
           LLM4SecHW: Leveraging Domain-Specific Large Language Model for
           Hardware Debugging
         </a>
@@ -429,11 +526,13 @@ end-to-end trust in intelligent systems—from models to machines.
 
       <li>
         <a href="https://www.honggangyu.com/pubs/HOST20.pdf"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank"
+           rel="noopener noreferrer">
           DeepEM: Deep Neural Networks Model Recovery through EM Side-Channel
           Information Leakage
         </a>
       </li>
+
     </ul>
 
   </div>
@@ -456,12 +555,24 @@ end-to-end trust in intelligent systems—from models to machines.
 
 <div class="research-content">
 
-  <img
-    class="research-image"
-    src="/images/research_biosecurity.png"
-    alt="Security and assurance for AI-enabled scientific discovery"
-  >
 
+  <!-- Left: Figure -->
+
+  <div class="research-media-single">
+
+    <img
+      src="/images/research_biosecurity.png"
+      alt="Security and assurance for AI-enabled scientific discovery"
+    >
+
+    <p class="research-caption">
+      Security and domain-aware assurance for AI-enabled scientific discovery.
+    </p>
+
+  </div>
+
+
+  <!-- Right: Text -->
 
   <div class="research-text">
 
@@ -487,13 +598,16 @@ end-to-end trust in intelligent systems—from models to machines.
     <p><b>Selected Work:</b></p>
 
     <ul>
+
       <li>
         <a href="https://arxiv.org/abs/2608.06779"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank"
+           rel="noopener noreferrer">
           Genotypic Triggers: Exposing Pharmacogenomic Blind Spots via
           Host-Specific Backdoors in Generative Antimicrobial Peptide Models
         </a>
       </li>
+
     </ul>
 
     <p>
