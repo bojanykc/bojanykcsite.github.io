@@ -129,6 +129,56 @@ author_profile: true
 
 
   /* =========================================================
+     Full-width horizontal figure
+     Used for Section 4
+     ========================================================= */
+
+  .research-wide-figure {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 0.75rem auto;
+    padding: 0;
+  }
+
+  .research-wide-figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto !important;
+  }
+
+  .research-text-wide {
+    width: 100%;
+    max-width: none;
+  }
+
+  .research-text-wide p {
+    margin-top: 0;
+    margin-bottom: 0.65rem;
+    line-height: 1.5;
+  }
+
+  .research-text-wide ul {
+    margin-top: 0.3rem;
+    margin-bottom: 0.45rem;
+    padding-left: 1.25rem;
+  }
+
+  .research-text-wide li {
+    margin-bottom: 0.25rem;
+    line-height: 1.42;
+  }
+
+  .research-text-wide li a {
+    text-decoration: none;
+  }
+
+  .research-text-wide li a:hover {
+    text-decoration: underline;
+  }
+
+
+  /* =========================================================
      Captions
      ========================================================= */
 
@@ -168,11 +218,6 @@ author_profile: true
       margin: 0 auto 0.9rem;
     }
 
-    .research-media-single img {
-      width: 100%;
-      height: auto;
-    }
-
     .research-media-stack {
       width: 100%;
       max-width: 550px;
@@ -180,9 +225,10 @@ author_profile: true
       gap: 0.8rem;
     }
 
-    .research-media-item img {
+    .research-wide-figure {
       width: 100%;
-      height: auto;
+      max-width: 100%;
+      margin-bottom: 0.9rem;
     }
 
     .research-caption {
@@ -193,7 +239,8 @@ author_profile: true
       margin-bottom: 0.7rem;
     }
 
-    .research-text p {
+    .research-text p,
+    .research-text-wide p {
       margin-bottom: 0.6rem;
     }
 
@@ -230,7 +277,7 @@ end-to-end trust in intelligent systems—from models to machines.
 
 
 <!-- ========================================================= -->
-<!-- Foundation Models                                         -->
+<!-- Section 1: Foundation Models                              -->
 <!-- ========================================================= -->
 
 <section class="research-section">
@@ -238,6 +285,9 @@ end-to-end trust in intelligent systems—from models to machines.
 <h2>Trustworthy Foundation Models and AI Agents</h2>
 
 <div class="research-content">
+
+
+  <!-- Left: LoRAScan figure -->
 
   <div class="research-media-single">
 
@@ -252,6 +302,8 @@ end-to-end trust in intelligent systems—from models to machines.
 
   </div>
 
+
+  <!-- Right: Text -->
 
   <div class="research-text">
 
@@ -313,7 +365,7 @@ end-to-end trust in intelligent systems—from models to machines.
 
 
 <!-- ========================================================= -->
-<!-- Intelligent Sensing / Embodied AI                         -->
+<!-- Section 2: Intelligent Sensing / Embodied AI              -->
 <!-- ========================================================= -->
 
 <section class="research-section">
@@ -322,7 +374,13 @@ end-to-end trust in intelligent systems—from models to machines.
 
 <div class="research-content">
 
+
+  <!-- Left: Two complementary figures -->
+
   <div class="research-media-stack">
+
+
+    <!-- Silent Sabotage -->
 
     <div class="research-media-item">
 
@@ -337,6 +395,8 @@ end-to-end trust in intelligent systems—from models to machines.
 
     </div>
 
+
+    <!-- Roadside LiDAR -->
 
     <div class="research-media-item">
 
@@ -353,6 +413,8 @@ end-to-end trust in intelligent systems—from models to machines.
 
   </div>
 
+
+  <!-- Right: Text -->
 
   <div class="research-text">
 
@@ -430,7 +492,7 @@ end-to-end trust in intelligent systems—from models to machines.
 
 
 <!-- ========================================================= -->
-<!-- Hardware / Systems                                        -->
+<!-- Section 3: Hardware / Systems                             -->
 <!-- ========================================================= -->
 
 <section class="research-section">
@@ -440,12 +502,12 @@ end-to-end trust in intelligent systems—from models to machines.
 <div class="research-content">
 
 
-  <!-- Left: two complementary figures -->
+  <!-- Left: Two complementary figures -->
 
   <div class="research-media-stack">
 
 
-    <!-- Reasoning LLMs for Hardware Design -->
+    <!-- ICCAD 2025 -->
 
     <div class="research-media-item">
 
@@ -461,7 +523,7 @@ end-to-end trust in intelligent systems—from models to machines.
     </div>
 
 
-    <!-- DeepEM Hardware Testbed -->
+    <!-- DeepEM -->
 
     <div class="research-media-item">
 
@@ -475,7 +537,6 @@ end-to-end trust in intelligent systems—from models to machines.
       </p>
 
     </div>
-
 
   </div>
 
@@ -554,73 +615,75 @@ end-to-end trust in intelligent systems—from models to machines.
 
 
 <!-- ========================================================= -->
-<!-- Scientific AI / Bioinformatics                            -->
+<!-- Section 4: Scientific AI / Bioinformatics                 -->
+<!-- Full-width figure because Figure 1 is horizontal          -->
 <!-- ========================================================= -->
 
 <section class="research-section">
 
 <h2>Secure AI for Scientific Discovery and Bioinformatics</h2>
 
-<div class="research-content">
 
-  <div class="research-media-single">
+<!-- Full-width Genotypic Triggers figure -->
 
-    <img
-      src="/images/research_biosecurity.png"
-      alt="Security and assurance for AI-enabled scientific discovery"
-    >
+<div class="research-wide-figure">
 
-    <p class="research-caption">
-      Security and domain-aware assurance for AI-enabled scientific discovery.
-    </p>
+  <img
+    src="/images/genotypic_triggers_fig1.png"
+    alt="Overview of genotype-dependent security risks in generative peptide models"
+  >
 
-  </div>
+  <p class="research-caption">
+    Revealing genotype-dependent security risks in AI-enabled peptide discovery.
+  </p>
+
+</div>
 
 
-  <div class="research-text">
+<!-- Full-width text below the figure -->
 
-    <p>
-    AI is increasingly becoming part of scientific discovery pipelines, where
-    model outputs can directly influence subsequent computational experiments,
-    candidate selection, and scientific decisions. This creates a new security
-    challenge: compromised models or data pipelines may preserve conventional
-    performance metrics while introducing hidden, context-dependent risks.
-    </p>
+<div class="research-text-wide">
 
-    <p>
-    Through our NSF CICI project, we investigate security and assurance for
-    AI-enabled bioinformatics workflows. Our work studies data and model integrity,
-    backdoor vulnerabilities in generative models, domain-aware auditing, and
-    independent validation. Recent research demonstrates how compromised
-    generative antimicrobial-peptide models can preserve conventional measures
-    of utility and safety while increasing predicted immunogenicity risk for
-    specific host contexts. These results motivate application-aware security
-    evaluation for scientific AI systems.
-    </p>
+  <p>
+  AI is increasingly becoming part of scientific discovery pipelines, where
+  model outputs can directly influence subsequent computational experiments,
+  candidate selection, and scientific decisions. This creates a new security
+  challenge: compromised models or data pipelines may preserve conventional
+  performance metrics while introducing hidden, context-dependent risks.
+  </p>
 
-    <p><b>Selected Work:</b></p>
+  <p>
+  Through our NSF CICI project, we investigate security and assurance for
+  AI-enabled bioinformatics workflows. Our work studies data and model integrity,
+  backdoor vulnerabilities in generative models, domain-aware auditing, and
+  independent validation. Recent research demonstrates how compromised
+  generative antimicrobial-peptide models can preserve conventional measures
+  of utility and safety while increasing predicted immunogenicity risk for
+  specific host contexts. These results motivate application-aware security
+  evaluation for scientific AI systems.
+  </p>
 
-    <ul>
+  <p><b>Selected Work:</b></p>
 
-      <li>
-        <a href="https://arxiv.org/abs/2608.06779"
-           target="_blank"
-           rel="noopener noreferrer">
-          Genotypic Triggers: Exposing Pharmacogenomic Blind Spots via
-          Host-Specific Backdoors in Generative Antimicrobial Peptide Models
-        </a>
-      </li>
+  <ul>
 
-    </ul>
+    <li>
+      <a href="https://arxiv.org/abs/2608.06779"
+         target="_blank"
+         rel="noopener noreferrer">
+        Genotypic Triggers: Exposing Pharmacogenomic Blind Spots via
+        Host-Specific Backdoors in Generative Antimicrobial Peptide Models
+      </a>
+    </li>
 
-    <p>
-    This research is supported by the NSF CICI project
-    <i>Safeguarding AI in Bioinformatics: Enhancing Cybersecurity in Biological
-    Data Infrastructure</i>
-    (Award No. 2419880).
-    </p>
+  </ul>
 
-  </div>
+  <p>
+  This research is supported by the NSF CICI project
+  <i>Safeguarding AI in Bioinformatics: Enhancing Cybersecurity in Biological
+  Data Infrastructure</i>
+  (Award No. 2419880).
+  </p>
 
 </div>
 
