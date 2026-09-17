@@ -21,7 +21,7 @@ For students currently at Michigan Tech, paid and volunteer research opportuniti
 
 
 # News
-
+- $${\color{red}[2026.09]}$$ [Paper]: Our paper “StepTrigger: Contact-State-Triggered Backdoor Attacks on VLM-Powered Legged Robots” has been accepted to EAI SmartSP 2026. Congratulations to Jiageng Zhang and Doniyorkhon Obidov!
 - $${\color{red}[2026.06]}$$ [Feature]: I was featured in Michigan Tech ECE's *The Circuit* for our research on secure and robust intelligent sensing systems for autonomous vehicles and robotics.
 - $${\color{red}[2026.05]}$$ [Activity]: Welcome Jiageng Zhang, who joined our group as a Ph.D. student working on robotics and cybersecurity!
 - $${\color{red}[2026.03]}$$ [Paper]: Our paper "Dynamic Deep Prompt Optimization for Defending Against Jailbreak Attacks on LLMs" has been published at AAAI 2026. Congratulations to Doniyorkhon Obidov!
